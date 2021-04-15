@@ -16,17 +16,17 @@ const AboutSection = () => {
                         <span className="dot green pointer"></span>
                     </div>
                     <div className="space">
-                        <p className="about">///About</p>
+                        <p className="about">&#x0002F;&#x0002F;&#x0002F; About</p>
                     </div>
                 </div>
                 <div className="shadow">
                     <div>
-                        <h2>// <span className="pink">About</span></h2>
+                        <h2>&#x0002F;&#x0002F;<span className="pink">About</span></h2>
                     </div>
                     <div className = "about_border_left">
                         <div className="h3_section">
-                            <h3>&lt;/<span className="pink">Me</span>&gt;</h3>
-                            <h3>&lt;/<span className="pink">Skills</span>&gt;</h3>
+                            <h3>&lt;&#x0002F;<span className="pink">Me</span>&gt;</h3>
+                            <h3>&lt;&#x0002F;<span className="pink">Skills</span>&gt;</h3>
                         </div>
                         <div className="about_section_content">
                             <div>
