@@ -12,7 +12,7 @@ const MainElement = () => {
                 <div className="main_section_position">
                     <div className="i_m">I'm</div>
                     <div className="main_section_text">
-                        <p className="front">Front-end developer <span className="pink">& </span>Programer</p>
+                        <p className="front">Front-end developer <span className="pink">&#x00026; </span>Programer</p>
                         <h1>BARTOSZ CZENCZEK</h1>
                     </div>
                 </div>
