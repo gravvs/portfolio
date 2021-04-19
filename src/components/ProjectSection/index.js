@@ -8,7 +8,7 @@ const ProjectSection = () => {
         <div className="color-dark">
         <div className="project_border_radius">
             <div className="project_section">
-                <div className="project_section_skills">
+                <div className="project_section_skills" id="projects">
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>JAVA SCRIPT</p>

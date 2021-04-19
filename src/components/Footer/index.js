@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="triangle">
-                <img src={triangle} alt="traingle_img" width="30px" height="30px"/>
+                <a href="#navigation"><img src={triangle} alt="traingle_img" width="30px" height="30px"/></a>
             </div>
             <div>
                 <img src={facebook_icon2} alt="facebook_icon"width="30px"height="30px" />

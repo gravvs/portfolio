@@ -1,0 +1,76 @@
+@import './variables.scss';
+@import './normalize';
+@import './fonts.scss';
+
+body{
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 0;
+  }
+  a:any-link{
+    text-decoration: none;
+  }
+  h1{
+    font-family: $f-fontAvenir Condensed;
+  }
+  h2{
+    margin-left: 40px;
+    font-size: pxToRem(32);
+    margin: 20px 40px 10px;
+  }
+  pre{
+      font-size: pxToRem(12);
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  textarea{
+    margin-top: 15px;
+    width: 293px;
+    height: 100px;
+    border-radius: 7px;
+    resize: none;
+  }
+  input{
+    height: 25px;
+    border-radius: 7px;
+    border: transparent;
+  }
+  label{
+    margin-left: 10px;
+    color: $c-white;
+    font-size: pxToRem(12);
+  }
+  footer{
+    width: 100%;
+    text-align: center;
+    background-color: $c-mirage;
+    color: $c-white;
+  }
+  footer img{
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  footer p{
+    color: $c-white;
+    margin-bottom: 0;
+  }
+  footer p:last-child{
+    font-size: pxToRem(12);
+  }
+  [data-aos=example-anim2] {
+    background-color: none;
+    color: $c-cerise-opacity;
+    transition-property: background-color, color;
+    transition-delay: 1s;
+  }
+  [data-aos=example-anim2].aos-animate {
+    background-color: $c-cerise-opacity;
+    color: $c-white;
+  }

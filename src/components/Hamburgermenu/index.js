@@ -44,13 +44,13 @@ const StyledMenu = styled.nav`
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <a href="/">
-        About us
+      <a href="#about_me">
+        About me
       </a>
-      <a href="/">
-        Pricing
+      <a href="#projects">
+        My projects
         </a>
-      <a href="/">
+      <a href="#message">
         Contact
         </a>
     </StyledMenu>
@@ -72,7 +72,7 @@ const StyledBurger = styled.button`
   padding: 0;
   z-index: 10;
 
-  @media (max-width: 576px) {
+  @media (max-width: 800px) {
     display: flex;
   }
 

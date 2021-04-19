@@ -6,7 +6,7 @@ AOS.init({duration: 1200});
 const AboutSection = () => {
     return (
         <div className="greyow">
-        <div className="white" >
+        <div className="white" id="about_me">
             <div data-aos="slide-up" data-aos-anchor="#trigger">
             <div className="about_section" >
                 <div className="about_section_header">
