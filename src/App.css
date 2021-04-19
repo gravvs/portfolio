@@ -482,9 +482,6 @@ footer img{
 .contact_section_head h3::before{
   border-right: 46vw solid transparent;
 }
-.color-dark{
-  position: unset;
-}
 }
 
 @media only screen and (max-width: 800px) {
@@ -546,6 +543,7 @@ footer img{
   }
   .color-dark{
     height: 700px;
+    position: unset;
   }
   .about_border_left{
       border-left: none;
