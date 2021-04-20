@@ -1,4 +1,4 @@
-#email{
+  .email{
     background-color: $c-charm-opacity;
     color: $c-white;
   }
@@ -239,13 +239,13 @@
     border-top-left-radius: $space-xx-small;
     border-bottom-left-radius: $space-xx-small;
   }
-  .w98{
+  .width98{
     width: 98%;
   }
-  .w90{
+  .width90{
     width: 90%;
   }
-  .w75{
+  .width75{
     width: 75%;
   }
   .skills_margin{
@@ -501,10 +501,10 @@
         left: -80px;
         top: 210px;
     }
-    #trigger{
+    .trigger{
         display: none;
     }
-    #trigger-second{
+    .trigger-second{
         display: none;
     }
     .about_section{
