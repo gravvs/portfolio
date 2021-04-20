@@ -43,10 +43,6 @@ label{
   color: white;
   font-size: 12px;
 }
-#email{
-  background-color: rgba(219, 125, 149, 0.87);
-  color: white;
-}
 .pointer{
   cursor: pointer;
 }
@@ -79,7 +75,7 @@ img.main_nav{
 }
 .bc_style:hover,
 .main_nav_hover:hover{
-  font-size: 120%;
+  font-size: 20px;
   transition: 0.1s linear;
 }
 .main_section_position{
@@ -299,13 +295,13 @@ img.main_nav{
   background-color: rgb(216, 216, 216);
   border-radius: 5px;
 }
-.w98{
+.width98{
   width: 98%;
 }
-.w90{
+.width90{
   width: 90%;
 }
-.w75{
+.width75{
   width: 75%;
 }
 .skills_bar_column p{
@@ -345,7 +341,7 @@ img.main_nav{
   cursor: pointer;
 }
 .project_section_skills p:hover{
-  font-size: 120%;
+  font-size: 20px;
   transition: 0.1s linear;
 }
 .project_section_skills p,
@@ -415,6 +411,10 @@ img.main_nav{
   text-align: center;
   background-color: rgb(34, 32, 48);
   height: 350px;
+}
+.email{
+  background-color: rgba(219, 125, 149, 0.87);
+  color: white;
 }
 .submit-button{
   display: block;
@@ -583,10 +583,10 @@ footer img{
   .contact_section_head h3::after{
     border-left: 44vw solid transparent;
   }
-  #trigger{
+  .trigger{
       display: none;
   }
-  #trigger-second{
+  .trigger-second{
       display: none;
   }
 }

@@ -46,15 +46,15 @@ const AboutSection = () => {
                             </div>
                             <div className="skills_bar">
                                 <div className="skills_bar_column">
-                                    <div><p className="w98"><span className="skills_margin">HTML</span></p></div>
-                                    <div><p className="w90"><span className="skills_margin">CSS</span></p></div>
-                                    <div><p className="w75"><span className="skills_margin">JAVA SCRIPT</span></p></div>
-                                    <div><p className="w90"><span className="skills_margin">REACT</span></p></div>
-                                    <div><p className="w90"><span className="skills_margin">HTML</span></p></div>
-                                    <div><p className="w90"><span className="skills_margin">HTML</span></p></div>
+                                    <div><p className="width98"><span className="skills_margin">HTML</span></p></div>
+                                    <div><p className="width90"><span className="skills_margin">CSS</span></p></div>
+                                    <div><p className="width75"><span className="skills_margin">JAVA SCRIPT</span></p></div>
+                                    <div><p className="width90"><span className="skills_margin">REACT</span></p></div>
+                                    <div><p className="width90"><span className="skills_margin">HTML</span></p></div>
+                                    <div><p className="width90"><span className="skills_margin">HTML</span></p></div>
                                 </div>
                                 <div className="skills_bar_number">
-                                    <div id="trigger"></div>
+                                    <div id="trigger" className="trigger" />
                                     <p>98%</p>
                                     <p>90%</p>
                                     <p>75%</p>
