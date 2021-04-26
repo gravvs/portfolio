@@ -22,10 +22,11 @@ $f-fontAvenir: 'Avenir Next';
 
 /* = breaks
 ********************************* */
-$break-xs-small: 380px;
+$break-xss-small: 375px;
+$break-xs-small: 420px;
 $break-xs: 480px;
 $break-s-mobile: 700px;
-$break-mobile: 767px;
+$break-mobile: 800px;
 $break-mid: 991px;
 $break-laptop: 1100px;
 $break-high: 1600px;
@@ -63,14 +64,14 @@ $space-large: 40px;
 $space-x-large: 50px;
 $space-xl-large: 80px;
 $space-xxl-large: 100px;
+$space-xsxl-large: 200px;
 $space-xx-large: 215px;
 $space-xxxl-large: 300px;
+$space-xxxxl-large: 400px;
+$space-super-large: 700px
 
 /* = buttons
 ********************************* */
-$button-small: 180px;
-$button-medium: 294px;
-$button-large: 375px
 
 /* = list
 ********************************* */

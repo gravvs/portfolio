@@ -1,0 +1,257 @@
+@media only screen and (max-width: $desktop-min) {
+  .project_section{
+  &__header h3::after {
+    border-left: 46vw solid transparent;
+  }
+  &__header h3::before {
+    border-right: 46vw solid transparent;
+  }
+}
+}
+
+@media only screen and (max-width: $break-mobile) {
+  pre {
+    position: absolute;
+    left: 59px;
+  }
+  .header__main__nav {
+    width: 90%;
+    display: none;
+  }
+  .main_element__wrapper {
+    width: 680px;
+    height: 420px;
+    padding-bottom: 150px;
+  }
+  .main_section{
+  &__text {
+    left: -78px;
+  }
+  &__inline {
+    left: -80px;
+  }
+}
+  .bracket{
+  &__1 {
+    left: 470px;
+    top: -25px;
+  }
+  &__2 {
+    left: 250px;
+  }
+}
+  .laptop_icon__1,
+  .laptop_icon__2 {
+    display: none;
+  }
+  .about_section{
+  top: -100px;
+  &__wrapper {
+    height: 650px;
+  }
+  &__background {
+    border-bottom-left-radius: 34% 57px;
+    border-bottom-right-radius: 33% 52px;
+    height: 632px;
+  }
+  &__header {
+    min-width: 580px;
+    position: relative;
+    top: -14px;
+    left: -58px;
+  }
+  &__footer--border {
+    height: 0;
+  }
+  &__content_wrapper {
+    display: block;
+  }
+  &__shadow {
+    min-width: 580px;
+    height: 710px;
+    position: relative;
+    top: -14px;
+    left: -58px;
+  }
+  &__border_left {
+    border-left: none;
+  }
+  &__content_skills {
+    top: 290px;
+    left: 68px;
+    width: $space-xxxxl-large;
+    border-left: none;
+  }
+}
+  .about_section__text_header {
+    right: -38px;
+    width: $space-xxxl-large;
+    h3:nth-child(2) {
+      position: relative;
+      top: 285px;
+      right: 140px;
+    }
+  }
+  .project_section{
+    &__wrapper {
+      height: 650px;
+    }
+  &__background {
+    height: $space-super-large;
+    position: unset;
+  }
+  &__content_img {
+    width: 600px;
+    justify-content: center;
+  }
+}
+  .project_section__header {
+    top: 56px;
+    h3::before {
+      border-right: 44vw solid transparent;
+    }
+    h3::after {
+      border-left: 44vw solid transparent;
+    }
+  }
+  .trigger {
+    display: none;
+  }
+  .trigger-second {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $break-xs-small) {
+
+  pre {
+    left: 40px;
+  }
+  .main_section{
+    margin-top: $space-x-small;
+    width: 50%;
+  &__letters {
+    right: 70px;
+  }
+  &_position {
+    min-width: $space-xsxl-large;
+  }
+  &__inline {
+    min-width: 277px;
+    left: -68px;
+  }
+}
+  .header__nav {
+    left: 0;
+    width: $space-xsxl-large;
+  }
+  .header__main__nav {
+    width: 76%;
+    div:nth-child(1) {
+      left: -28px;
+    }
+    div:nth-child(2) {
+      top: 7px;
+      left: 5px;
+    }
+  }
+  .main_element{
+  &__wrapper {
+    width: 320px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 250px;
+  }
+  &__photo {
+    width: 230px;
+    height: 230px;
+    display: flex;
+    border-radius: 50%;
+    margin: $space-xl-large 0 0 0;
+  }
+}
+  .margin {
+    margin: 0 $space-x-small;
+  }
+  .bracket{
+  &__1 {
+    left: 180px;
+  }
+  &__2 {
+    left: -80px;
+    top: 210px;
+  }
+}
+  .about_section {
+    width: 100vw;
+    &__header {
+      min-width: 100%;
+      top: 0;
+      left: 0;
+    }
+    &__shadow {
+      min-width: 100%;
+      top: 0;
+      left: 0;
+    }
+    &__border_left {
+      left: 0;
+    }
+    &__content_wrapper {
+      justify-content: center;
+      flex-direction: row;
+    }
+    &__content_skills--column {
+      width: 265px;
+    }
+    &__content_skills {
+      top: 300px;
+      left: 32px;
+      width: $space-xxxl-large;
+    }
+  }
+  .about_section__text_header {
+    right: 0;
+    h3:nth-child(2) {
+      right: 140px;
+    }
+  }
+  .project_section{
+    &__wrapper {
+      height: 1021px;
+    }
+    &__background {
+      height: 1021px;
+    }
+  &__content_skills {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__content_img {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: $space-xxxl-large;
+  }
+}
+  .project_section__header {
+    top: 403px;
+    h3::before {
+      display: none;
+    }
+    h3::after {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: $break-xss-small) {
+  .project_section{
+  &__background {
+    height: 1055px;
+  }
+  &__wrapper {
+    height: 1058px;
+  }
+}
+}

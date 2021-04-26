@@ -14,6 +14,21 @@
     }
 }
 
+@mixin bottomRadius($arg){
+    border-bottom-left-radius: $arg;
+    border-bottom-right-radius: $arg;
+}
+
+@mixin blackTriangle($arg){
+  position: relative;
+  top: -41px;
+  $arg: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 62px solid $c-steel-gray;
+}
+
 $sizes: 1, 2, 3, 4, 5;
 @mixin createCol(){
     @each $size in $sizes {
