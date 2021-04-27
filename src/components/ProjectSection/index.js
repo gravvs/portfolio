@@ -25,7 +25,7 @@ const ProjectSection = () => {
         </div>
         <div className="project_section__header">
           <h3>
-            //<span className="pink">Contact</span>
+          &#x0002F;&#x0002F;<span className="pink">Contact</span>
           </h3>
           <span id="trigger-second" className="trigger-second" />
         </div>
