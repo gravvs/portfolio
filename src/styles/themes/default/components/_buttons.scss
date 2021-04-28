@@ -1,4 +1,4 @@
-.submit-button {
+.contact__button {
   display: block;
   margin-top: $space-small;
   width: 45%;
@@ -12,7 +12,7 @@
   border-radius: $space-xxl-large;
   height: $space-medium;
 }
-.submit-button:hover {
+.contact__button:hover {
   background-color: $c-charm-opacity;
 }
 

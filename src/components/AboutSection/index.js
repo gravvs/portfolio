@@ -4,30 +4,30 @@ AOS.init({ duration: 1200 });
 
 const AboutSection = () => {
   return (
-    <div className="about_section__wrapper">
-      <div className="about_section__background" id="about_me">
+    <div className="about">
+      <div className="about__background" id="about_me">
         <div data-aos="slide-up" data-aos-anchor="#trigger">
-          <div className="about_section">
-            <div className="about_section__header">
-              <div className="about_section__header--dot space">
-                <span className="about_section__header--dot red pointer"></span>
-                <span className="about_section__header--dot yellow pointer"></span>
-                <span className="about_section__header--dot green pointer"></span>
+          <div className="about__content-wrapper">
+            <div className="about__header">
+              <div className="about__header-dot space">
+                <span className="about__header-dot red pointer"></span>
+                <span className="about__header-dot yellow pointer"></span>
+                <span className="about__header-dot green pointer"></span>
               </div>
               <div className="space">
-                <p className="about_section--about">
+                <p className="about__text-about">
                   &#x0002F;&#x0002F;&#x0002F; About
                 </p>
               </div>
             </div>
-            <div className="about_section__shadow">
+            <div className="about__shadow">
               <div>
                 <h2>
                   &#x0002F;&#x0002F;<span className="pink">About</span>
                 </h2>
               </div>
-              <div className="about_section__border_left">
-                <div className="about_section__text_header">
+              <div className="about__border-left">
+                <div className="about__text-header">
                   <h3>
                     &lt;&#x0002F;<span className="pink">Me</span>&gt;
                   </h3>
@@ -35,7 +35,7 @@ const AboutSection = () => {
                     &lt;&#x0002F;<span className="pink">Skills</span>&gt;
                   </h3>
                 </div>
-                <div className="about_section__content_wrapper">
+                <div className="about__text-wrapper">
                   <div>
                     <pre>{`
     {
@@ -51,40 +51,40 @@ const AboutSection = () => {
     }
                             `}</pre>
                   </div>
-                  <div className="about_section__content_skills">
-                    <div className="about_section__content_skills--column">
+                  <div className="about__content-skills">
+                    <div className="about__content-column">
                       <div>
                         <p className="width98">
-                          <span className="about_section__content_skills--margin">HTML</span>
+                          <span className="about__content-margin">HTML</span>
                         </p>
                       </div>
                       <div>
                         <p className="width90">
-                          <span className="about_section__content_skills--margin">CSS</span>
+                          <span className="about__content-margin">CSS</span>
                         </p>
                       </div>
                       <div>
                         <p className="width75">
-                          <span className="about_section__content_skills--margin">JAVA SCRIPT</span>
+                          <span className="about__content-margin">JAVA SCRIPT</span>
                         </p>
                       </div>
                       <div>
                         <p className="width90">
-                          <span className="about_section__content_skills--margin">REACT</span>
+                          <span className="about__content-margin">REACT</span>
                         </p>
                       </div>
                       <div>
                         <p className="width90">
-                          <span className="about_section__content_skills--margin">HTML</span>
+                          <span className="about__content-margin">HTML</span>
                         </p>
                       </div>
                       <div>
                         <p className="width90">
-                          <span className="about_section__content_skills--margin">HTML</span>
+                          <span className="about__content-margin">HTML</span>
                         </p>
                       </div>
                     </div>
-                    <div className="about_section__content_skills--numbers">
+                    <div className="about__content-numbers">
                       <div id="trigger" className="trigger" />
                       <p>98%</p>
                       <p>90%</p>
@@ -100,7 +100,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <div className="about_section__footer--border"></div>
+      <div className="about__footer-border"></div>
     </div>
   );
 };

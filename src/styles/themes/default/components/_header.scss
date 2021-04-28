@@ -1,23 +1,23 @@
-.header__main__nav {
+.header {
     width: 93vw;
     margin-left: $space-x-large;
     display: flex;
     justify-content: space-around;
     border-bottom: $space-xxx-small solid $c-light-orchid-opacity;
-  }
-  .header__contact {
-    background-color: $c-cerise-opacity;
-    color: $c-white;
-    padding: 0 $space-xs-small;
-  }
-  .header__contact:hover {
-    background-color: $c-white;
-    color: $c-cerise-opacity;
-  }
-  .header__nav {
-    display: flex;
-    position: relative;
-    left: 25px;
+    &__contact {
+      background-color: $c-cerise-opacity;
+      color: $c-white;
+      padding: 0 $space-xs-small;
+    }
+    &__contact:hover {
+      background-color: $c-white;
+      color: $c-cerise-opacity;
+    }
+    &__nav {
+      display: flex;
+      position: relative;
+      left: 25px;
+    }
   }
   p.header__nav,
   img.header__nav {
@@ -30,7 +30,7 @@
     margin-top: $space-small;
   }
   .bc_style:hover,
-  .header__nav__hover:hover {
+  .header__nav-hover:hover {
     font-size: pxToRem(20);
     transition: 0.1s linear;
   }

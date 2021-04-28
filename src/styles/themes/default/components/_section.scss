@@ -31,13 +31,51 @@
 .green {
   background-color: green;
 }
-.main_section__text--font {
-  font-family: American Typewriter;
-}
-.main_section {
+.main{
+  display: flex;
+  justify-content: flex-end;
+  height: $space-xxxxl-large;
+  width: 93vw;
+  margin-left: $space-x-large;
+  margin-top: $space-xl-large;
+
+  &__icon-1 {
+    position: relative;
+    width: $space-standard;
+    height: $space-standard;
+    top: -47px;
+    left: 700px;
+    transform: rotate(45deg);
+  }
+  &__icon-2 {
+    position: relative;
+    width: $space-medium;
+    height: $space-medium;
+    top: 325px;
+    left: 304px;
+    transform: rotate(-45deg);
+  }
+  &__icon-3 {
+    position: relative;
+    width: $space-x-large;
+    height: $space-x-large;
+    top: 100px;
+    left: -100px;
+    transform: rotate(-45deg);
+  }
+  &__icon-4 {
+    position: relative;
+    width: $space-x-large;
+    height: $space-x-large;
+    top: 390px;
+    left: 750px;
+    transform: rotate(45deg);
+  }
+&__text-wrapper {
   width: 36%;
   margin-top: 60px;
-  &_position {
+}
+  &__position {
     position: relative;
     top: 30px;
     min-width: 345px;
@@ -53,14 +91,16 @@
     top: 0;
     left: 0;
   }
-  &__inline {
+  &__style-inline {
     position: relative;
     display: flex;
     justify-content: flex-start;
     min-width: 317px;
   }
+  &__font {
+  font-family: American Typewriter;
 }
-.main_element__photo--img {
+&__img {
   width: $space-xx-large;
   height: $space-xx-large;
   background-color: $c-white;
@@ -74,7 +114,6 @@
     margin: $space-xs-small $space-xs-small;
   }
 }
-.main_element {
   &__photo {
     background-color: $c-cerise-opacity;
     width: 40%;
@@ -83,67 +122,23 @@
     border-top-left-radius: $space-xsxl-large;
     border-bottom-left-radius: $space-xsxl-large;
   }
-  &__wrapper {
-    display: flex;
-    justify-content: flex-end;
-    height: $space-xxxxl-large;
-    width: 93vw;
-    margin-left: $space-x-large;
-    margin-top: $space-xl-large;
-  }
 }
-.bracket {
-  &__1 {
-    position: relative;
-    width: $space-standard;
-    height: $space-standard;
-    top: -47px;
-    left: 700px;
-    transform: rotate(45deg);
-  }
-  &__2 {
-    position: relative;
-    width: $space-medium;
-    height: $space-medium;
-    top: 325px;
-    left: 304px;
-    transform: rotate(-45deg);
-  }
-}
-.laptop_icon {
-  &__1 {
-    position: relative;
-    width: $space-x-large;
-    height: $space-x-large;
-    top: 100px;
-    left: -100px;
-    transform: rotate(-45deg);
-  }
-  &__2 {
-    position: relative;
-    width: $space-x-large;
-    height: $space-x-large;
-    top: 390px;
-    left: 750px;
-    transform: rotate(45deg);
-  }
-}
-.about_section {
-  display: flex;
-  width: 60%;
-  flex-direction: column;
-  margin: 0 auto;
-  position: relative;
-  top: 50px;
-  &__wrapper {
-    background-color: $c-gallery;
-    height: 520px;
-  }
+.about {
+  background-color: $c-gallery;
+  height: 520px;
   &__background {
     background-color: $c-white;
     height: 402px;
   }
-  &__footer--border {
+  &__content-wrapper {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+  }
+  &__footer-border {
     background: $c-white;
     height: $space-xxl-large;
     @include bottomRadius(50% 90px);
@@ -169,31 +164,35 @@
     min-width: $space-super-large;
     margin: auto;
   }
-  &__header--dot {
+  &__header-dot {
     min-width: $space-x-small;
     min-height: $space-x-small;
     border-radius: 50%;
     display: flex;
     margin: auto $space-xx-small;
   }
-  &__text_header {
+  &__text-about {
+    margin: $space-x-small;
+    color: $c-white;
+  }
+  &__text-header {
     display: flex;
     justify-content: space-around;
     position: relative;
     right: 110px;
   }
-  &__border_left {
+  &__border-left {
     width: 90%;
     position: relative;
     left: 63px;
     border-left: $space-xxx-small solid $c-gallery;
   }
-  &__content_wrapper {
+  &__text-wrapper {
     display: flex;
     justify-content: space-around;
     padding-bottom: $space-standard;
   }
-  &__content_skills {
+  &__content-skills {
     display: flex;
     width: $space-xxxl-large;
     position: relative;
@@ -201,30 +200,26 @@
     border-left: $space-xxx-small solid $c-gallery;
     padding-left: $space-standard;
   }
-  &__content_skills--numbers p {
+  &__content-column {
+    width: 70%;
+    div {
+      background-color: $c-alto;
+      border-radius: $space-xx-small;
+    }
+    p {
+      background-color: $c-cerise-opacity;
+      border-top-left-radius: $space-xx-small;
+      border-bottom-left-radius: $space-xx-small;
+    }
+  }
+  &__content-numbers p {
     margin-left: $space-xx-small;
   }
-  &__content_skills--margin {
+  &__content-margin {
     margin-left: $space-xx-small;
     color: $c-white;
     font-family: sans-serif;
     font-size: pxToRem(13);
-  }
-}
-.about_section--about {
-  margin: $space-x-small;
-  color: $c-white;
-}
-.about_section__content_skills--column {
-  width: 70%;
-  div {
-    background-color: $c-alto;
-    border-radius: $space-xx-small;
-  }
-  p {
-    background-color: $c-cerise-opacity;
-    border-top-left-radius: $space-xx-small;
-    border-bottom-left-radius: $space-xx-small;
   }
 }
 .width98 {
@@ -236,85 +231,80 @@
 .width75 {
   width: 75%;
 }
-.project_section {
-  padding-top: $space-xxl-large;
+.project {
+  background-color: $c-steel-gray;
+  position: relative;
+  z-index: 2;
   &__wrapper {
     height: 641px;
     background-color: $c-gallery;
     @include bottomRadius(50% $space-xxl-large);
   }
-  &__background {
-    background-color: $c-steel-gray;
+  &__footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-top: $space-xxx-small solid $c-charm-opacity;
     position: relative;
-    z-index: 2;
+    top: 47px;
+    left: 0;
+    padding-top: 6px;
+    border-top-right-radius: 42%;
+    border-top-left-radius: 42%;
+    h3::before {
+      @include blackTriangle(left);
+      border-right: 47vw solid transparent;
+    }
+    h3::after {
+      @include blackTriangle(right);
+      border-left: 47vw solid transparent;
+    }
+  }
+  &__skills {
+    display: flex;
+    justify-content: space-evenly;
+    width: 650px;
+    margin: auto;
+    padding-top: $space-medium;
+    p {
+      padding: 3px $space-xs-small;
+      cursor: pointer;
+    }
+    p:nth-child(3) {
+      background-color: $c-cerise-opacity;
+      border-radius: $space-xxxl-large;
+      color: $c-white;
+    }
+    p:hover {
+      font-size: pxToRem(20);
+      transition: 0.1s linear;
+    }
+  }
+  &__img {
+    display: flex;
+    flex-wrap: wrap;
+    width: $space-super-large;
+    height: $space-xxxxl-large;
+    margin: $space-standard auto;
+    justify-content: flex-start;
+    img {
+      width: 233px;
+      height: $space-xsxl-large;
+      border-radius: $space-x-small;
+      cursor: pointer;
+    }
   }
 }
-.project_section__content_skills {
-  display: flex;
-  justify-content: space-evenly;
-  width: 650px;
-  margin: auto;
-  padding-top: $space-medium;
-  p {
-    padding: 3px $space-xs-small;
-    cursor: pointer;
-  }
-  p:nth-child(3) {
-    background-color: $c-cerise-opacity;
-    border-radius: $space-xxxl-large;
-    color: $c-white;
-  }
-  p:hover {
-    font-size: pxToRem(20);
-    transition: 0.1s linear;
-  }
-}
-.project_section__content_skills p,
-.about_section__content_skills--column p {
+.project__skills p,
+.about__content-column p {
   font-family: sans-serif;
   font-weight: lighter;
 }
-.project_section__content_img {
-  display: flex;
-  flex-wrap: wrap;
-  width: $space-super-large;
-  height: $space-xxxxl-large;
-  margin: $space-standard auto;
-  justify-content: flex-start;
-  img {
-    width: 233px;
-    height: $space-xsxl-large;
-    border-radius: $space-x-small;
-    cursor: pointer;
-  }
-}
-.project_section__header {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  border-top: $space-xxx-small solid $c-charm-opacity;
-  position: relative;
-  top: 47px;
-  left: 0;
-  padding-top: 6px;
-  border-top-right-radius: 42%;
-  border-top-left-radius: 42%;
-  h3::before {
-    @include blackTriangle(left);
-    border-right: 47vw solid transparent;
-  }
-  h3::after {
-    @include blackTriangle(right);
-    border-left: 47vw solid transparent;
-  }
-}
-.contact_section {
-  &__form_wrapper {
+.contact {
     display: block;
     text-align: center;
     background-color: $c-steel-gray;
     height: 350px;
-  }
   &__email {
     background-color: $c-charm-opacity;
     color: $c-white;

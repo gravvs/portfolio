@@ -6,26 +6,26 @@ AOS.init();
 
 const MainElement = () => {
     return (
-        <div className="main_element__wrapper">
-            <img src={brackets} alt="brackets" className="bracket__1" />
-            <img src={brackets} alt="brackets" className="bracket__2" />
-            <img src={laptop} alt="laptop" className="laptop_icon__1" />
-            <img src={laptop} alt="laptop" className="laptop_icon__2" />
-            <div className="main_section">
-                <div className="main_section_position">
-                    <div className="main_section__letters">I'm</div>
-                    <div className="main_section__text">
-                        <p className="main_section__text--font">Front-end developer <span className="pink">&#x00026; </span>Programer</p>
+        <div className="main">
+            <img src={brackets} alt="brackets" className="main__icon-1" />
+            <img src={brackets} alt="brackets" className="main__icon-2" />
+            <img src={laptop} alt="laptop" className="main__icon-3" />
+            <img src={laptop} alt="laptop" className="main__icon-4" />
+            <div className="main__text-wrapper">
+                <div className="main__position">
+                    <div className="main__letters">I'm</div>
+                    <div className="main__text">
+                        <p className="main__font">Front-end developer <span className="pink">&#x00026; </span>Programer</p>
                         <h1>BARTOSZ CZENCZEK</h1>
                     </div>
                 </div>
-                <div className="main_section__inline">
+                <div className="main__style-inline">
                 <a href="#projects"><p className="pink margin border pointer" data-aos="example-anim2">My projects</p></a>
-                <a href="#about_me"><p className="pink margin pointer header__nav__hover">More about me</p></a>
+                <a href="#about_me"><p className="pink margin pointer header__nav-hover">More about me</p></a>
                 </div>
             </div>
-            <div className="main_element__photo">
-                <div className="main_element__photo--img">
+            <div className="main__photo">
+                <div className="main__img">
                     <img src={moje_zdjecie} alt="my_photo" height="200px" width="200px" /> 
                 </div>
             </div>
