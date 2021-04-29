@@ -1,0 +1,248 @@
+@media only screen and (max-width: $desktop-min) {
+  .project {
+    &__footer h3::after {
+      border-left: 46vw solid transparent;
+    }
+    &__footer h3::before {
+      border-right: 46vw solid transparent;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-mobile) {
+  pre {
+    position: absolute;
+    left: 59px;
+  }
+  .header {
+    width: 90%;
+    display: none;
+  }
+  .main {
+    width: 680px;
+    height: 420px;
+    padding-bottom: 150px;
+    &__icon-1 {
+      left: 470px;
+      top: -25px;
+    }
+    &__icon-2 {
+      left: 250px;
+    }
+    &__text {
+      left: -78px;
+    }
+    &__inline {
+      left: -80px;
+    }
+  }
+  .main__icon-3,
+  .main__icon-4 {
+    display: none;
+  }
+
+  .about {
+    height: 650px;
+    &__background {
+      border-bottom-left-radius: 34% 57px;
+      border-bottom-right-radius: 33% 52px;
+      height: 632px;
+    }
+    &__header {
+      min-width: 580px;
+      position: relative;
+      top: -14px;
+      left: -58px;
+    }
+    &__footer-border {
+      height: 0;
+    }
+    &__content-wrapper {
+      top: -100px;
+    }
+    &__text-wrapper {
+      display: block;
+    }
+    &__shadow {
+      min-width: 580px;
+      height: 710px;
+      position: relative;
+      top: -14px;
+      left: -58px;
+    }
+    &__border-left {
+      border-left: none;
+    }
+    &__content-skills {
+      top: 290px;
+      left: 68px;
+      width: $space-xxxxl-large;
+      border-left: none;
+    }
+    &__text-header {
+      right: -38px;
+      width: $space-xxxl-large;
+      h3:nth-child(2) {
+        position: relative;
+        top: 285px;
+        right: 140px;
+      }
+    }
+  }
+  .project {
+    height: $space-super-large;
+    position: unset;
+    &__wrapper {
+      height: 650px;
+    }
+    &__img {
+      width: 600px;
+      justify-content: center;
+    }
+  }
+  .project__footer {
+    top: 56px;
+    h3::before {
+      border-right: 44vw solid transparent;
+    }
+    h3::after {
+      border-left: 44vw solid transparent;
+    }
+  }
+  .trigger {
+    display: none;
+  }
+  .trigger-second {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $break-xs-small) {
+  pre {
+    left: 40px;
+  }
+  .header {
+    width: 76%;
+    div:nth-child(1) {
+      left: -28px;
+    }
+    div:nth-child(2) {
+      top: 7px;
+      left: 5px;
+    }
+    &__nav {
+      left: 0;
+      width: $space-xsxl-large;
+    }
+  }
+  .main {
+    width: 320px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 250px;
+
+    &__icon-1 {
+      left: 180px;
+    }
+    &__icon-2 {
+      left: -80px;
+      top: 210px;
+    }
+    &__photo {
+      width: 230px;
+      height: 230px;
+      display: flex;
+      border-radius: 50%;
+      margin: $space-xl-large 0 0 0;
+    }
+    &__text-wrapper {
+      margin-top: $space-x-small;
+      width: 50%;
+    }
+    &__letters {
+      right: 70px;
+    }
+    &__position {
+      min-width: $space-xsxl-large;
+    }
+    &__style-inline {
+      min-width: 277px;
+      left: -68px;
+    }
+  }
+
+  .margin {
+    margin: 0 $space-x-small;
+  }
+
+  .about {
+    &__content-wrapper {
+      width: 100vw;
+    }
+    &__header {
+      min-width: 100%;
+      top: 0;
+      left: 0;
+    }
+    &__shadow {
+      min-width: 100%;
+      top: 0;
+      left: 0;
+    }
+    &__border-left {
+      left: 0;
+    }
+    &__text-wrapper {
+      justify-content: center;
+      flex-direction: row;
+    }
+    &__text_header {
+      right: 0;
+      h3:nth-child(2) {
+        right: 140px;
+      }
+    }
+    &__content-column {
+      width: 265px;
+    }
+    &__content-skills {
+      top: 300px;
+      left: 32px;
+      width: $space-xxxl-large;
+    }
+  }
+  .project {
+    height: 1021px;
+    &__wrapper {
+      height: 1021px;
+    }
+    &__skills {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__img {
+      justify-content: center;
+      flex-wrap: wrap;
+      width: $space-xxxl-large;
+    }
+  }
+  .project__footer {
+    top: 403px;
+    h3::before {
+      display: none;
+    }
+    h3::after {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: $break-xss-small) {
+  .project {
+    height: 1055px;
+    &__wrapper {
+      height: 1058px;
+    }
+  }
+}

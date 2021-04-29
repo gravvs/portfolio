@@ -1,0 +1,29 @@
+.contact__button {
+  display: block;
+  margin-top: $space-small;
+  width: 45%;
+  position: relative;
+  left: 80px;
+  background-color: $c-steel-gray;
+  border: 1px solid $c-charm-opacity;
+  color: $c-white;
+  font-family: sans-serif;
+  font-size: pxToRem(12);
+  border-radius: $space-xxl-large;
+  height: $space-medium;
+}
+.contact__button:hover {
+  background-color: $c-charm-opacity;
+}
+
+.footer__return {
+  background-color: grey;
+  width: $space-large;
+  height: $space-large;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  top: -17px;
+}

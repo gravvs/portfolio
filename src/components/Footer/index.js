@@ -6,7 +6,7 @@ import instagram_icon2 from '../../assets/picture/instagram_icon2.png';
 const Footer = () => {
     return (
         <footer>
-            <div className="triangle">
+            <div className="footer__return">
                 <a href="#navigation"><img src={triangle} alt="traingle_img" width="30px" height="30px"/></a>
             </div>
             <div>
