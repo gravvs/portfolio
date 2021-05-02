@@ -1,9 +1,6 @@
 .contact__button {
   display: block;
-  margin-top: $space-small;
   width: 45%;
-  position: relative;
-  left: 80px;
   background-color: $c-steel-gray;
   border: 1px solid $c-charm-opacity;
   color: $c-white;
@@ -11,19 +8,25 @@
   font-size: pxToRem(12);
   border-radius: $space-xxl-large;
   height: $space-medium;
+  margin: 20px auto;
 }
 .contact__button:hover {
   background-color: $c-charm-opacity;
 }
 
-.footer__return {
+.footer{
+&__return {
   background-color: grey;
-  width: $space-large;
-  height: $space-large;
+  width: 50px;
+  height: 50px;
   margin: auto;
   display: flex;
   justify-content: center;
   border-radius: 50%;
   position: relative;
   top: -17px;
+}
+&__return:hover{
+  background-color: rgba(207, 97, 198, 0.87);
+}
 }

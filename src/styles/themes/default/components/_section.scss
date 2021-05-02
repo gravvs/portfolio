@@ -97,6 +97,9 @@
     justify-content: flex-start;
     min-width: 317px;
   }
+  &__style-inline a:hover {
+    text-shadow: 2px 2px;
+  }
   &__font {
   font-family: American Typewriter;
 }
@@ -276,14 +279,14 @@
       color: $c-white;
     }
     p:hover {
-      font-size: pxToRem(20);
+      text-shadow: 2px 2px;
       transition: 0.1s linear;
     }
   }
   &__img {
     display: flex;
     flex-wrap: wrap;
-    width: $space-super-large;
+    width: 730px;
     height: $space-xxxxl-large;
     margin: $space-standard auto;
     justify-content: flex-start;
@@ -292,6 +295,10 @@
       height: $space-xsxl-large;
       border-radius: $space-x-small;
       cursor: pointer;
+      margin: 5px 5px;
+    }
+    img:hover{
+      transform: scaleX(-1);
     }
   }
 }
@@ -309,6 +316,10 @@
     background-color: $c-charm-opacity;
     color: $c-white;
   }
+}
+.footer__img img:hover{
+  width: 35px;
+  height: 35px;
 }
 [data-aos="example-anim2"] {
   background-color: none;

@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer__return">
-                <a href="#navigation"><img src={triangle} alt="traingle_img" width="30px" height="30px"/></a>
+                <a href="#navigation"><img src={triangle} alt="traingle_img" width="40px" height="40px"/></a>
             </div>
-            <div>
+            <div className="footer__img">
                 <img src={facebook_icon2} alt="facebook_icon"width="30px"height="30px" />
                 <img src={instagram_icon2} alt="instagram_icon"width="30px"height="30px" />
                 <img src={linkedin_icon2} alt="linkedIn_icon"width="30px"height="30px" />

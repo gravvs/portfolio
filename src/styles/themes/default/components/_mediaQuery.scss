@@ -75,7 +75,7 @@
     }
     &__content-skills {
       top: 290px;
-      left: 68px;
+      left: 58px;
       width: $space-xxxxl-large;
       border-left: none;
     }
@@ -213,9 +213,9 @@
     }
   }
   .project {
-    height: 1021px;
+    height: 1045px;
     &__wrapper {
-      height: 1021px;
+      height: 1045px;
     }
     &__skills {
       width: 100%;
@@ -227,22 +227,25 @@
       flex-wrap: wrap;
       width: $space-xxxl-large;
     }
+    &__footer {
+      top: 423px;
+      h3::before {
+        display: none;
+      }
+      h3::after {
+        display: none;
+      }
+    }
   }
-  .project__footer {
-    top: 403px;
-    h3::before {
-      display: none;
-    }
-    h3::after {
-      display: none;
-    }
+  form{
+    width: 300px;
   }
 }
 @media only screen and (max-width: $break-xss-small) {
   .project {
-    height: 1055px;
+    height: 1075px;
     &__wrapper {
-      height: 1058px;
+      height: 1078px;
     }
   }
 }

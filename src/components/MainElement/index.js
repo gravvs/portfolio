@@ -21,7 +21,7 @@ const MainElement = () => {
                 </div>
                 <div className="main__style-inline">
                 <a href="#projects"><p className="pink margin border pointer" data-aos="example-anim2">My projects</p></a>
-                <a href="#about_me"><p className="pink margin pointer header__nav-hover">More about me</p></a>
+                <a href="#about_me"><p className="pink margin pointer">More about me</p></a>
                 </div>
             </div>
             <div className="main__photo">

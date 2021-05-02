@@ -30,13 +30,12 @@ form{
   justify-content: center;
   text-align: left;
   flex-direction: column;
-  width: $space-xxxl-large;
+  width: 400px;
   margin: 0 auto;
   padding-top: $space-large;
 }
 textarea{
   margin-top: $space-small;
-  width: 293px;
   height: $space-xxl-large;
   border-radius: $space-xs-small;
   resize: none;
@@ -45,6 +44,7 @@ input{
   height: 25px;
   border-radius: $space-xs-small;
   border: transparent;
+  padding-left: 10px;
 }
 label{
   margin-left: $space-x-small;
@@ -57,7 +57,7 @@ footer{
   background-color: $c-mirage;
   color: $c-white;
   img{
-    margin: 0 $space-x-small;
+    margin: 1px $space-x-small;
     cursor: pointer;
   }
   p{

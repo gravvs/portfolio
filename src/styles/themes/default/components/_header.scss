@@ -24,13 +24,18 @@
     margin-right: $space-medium;
     cursor: pointer;
   }
-  img.header__nav {
+  img.header{
+  &__nav {
     width: $space-standard;
     height: $space-standard;
     margin-top: $space-small;
   }
-  .bc_style:hover,
-  .header__nav-hover:hover {
-    font-size: pxToRem(20);
+  &__nav:hover{
+    width: 25px;
+    height: 25px;
+  }
+  }
+  .header__nav a:hover {
+    text-shadow: 2px 2px;
     transition: 0.1s linear;
   }
