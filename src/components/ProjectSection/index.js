@@ -8,7 +8,7 @@ const ProjectSection = () => {
     <div className="project">
       <div className="project__wrapper">
         <div className="project__content">
-          <div className="project__skills" id="projects">
+          <div className="project__skills">
             <p>HTML</p>
             <p>CSS</p>
             <p>JAVA SCRIPT</p>
@@ -25,7 +25,7 @@ const ProjectSection = () => {
         </div>
         <div className="project__footer">
           <h3>
-            //<span className="pink">Contact</span>
+          &#x0002F;&#x0002F;<span className="pink">Contact</span>
           </h3>
           <span id="trigger-second" className="trigger-second" />
         </div>
