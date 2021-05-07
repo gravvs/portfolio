@@ -2,15 +2,17 @@ import facebook from '../../assets/picture/facebook.jpeg';
 import instagram_icon from '../../assets/picture/instagram_icon.png';
 import linkedin from '../../assets/picture/linkedin.png';
 
-const Header = () => {
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+
+const Header = ({refProject, refAbout, refContact}) => {
 return ( 
       
-        <div className="header" id="navigation">
+        <div className="header">
             <div className="header__nav">
-                <p className="header__nav"><span className="bc_style">BC</span></p>
-                <a href="#projects"><p className="header__nav"><span className="pink" >Project</span></p></a>
-                <a href="#about_me"><p className="header__nav">About Me</p></a>
-                <a href="#message"><p className="header__nav border header__contact">Contact</p></a>
+                <p className="header__nav"><span className="bc">BC</span></p>
+                <p className="header__nav" onClick={() => scrollToRef(refProject)}><span className="pink" >Project</span></p>
+                <p className="header__nav" onClick={() => scrollToRef(refAbout)}>About Me</p>
+                <p className="header__nav border header__contact" onClick={() => scrollToRef(refContact)}>Contact</p>
             </div>
             <div className="header__nav">
                 <img src={facebook} alt="facebook_icon" className="header__nav" />

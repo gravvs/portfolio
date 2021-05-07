@@ -4,7 +4,9 @@ import moje_zdjecie from '../../assets/picture/moje_zdjecie_p.jpg';
 import AOS from 'aos';
 AOS.init();
 
-const MainElement = () => {
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+
+const MainElement = ({refProject, refAbout}) => {
     return (
         <div className="main">
             <img src={brackets} alt="brackets" className="main__icon-1" />
@@ -20,8 +22,8 @@ const MainElement = () => {
                     </div>
                 </div>
                 <div className="main__style-inline">
-                <a href="#projects"><p className="pink margin border pointer" data-aos="example-anim2">My projects</p></a>
-                <a href="#about_me"><p className="pink margin pointer">More about me</p></a>
+                <p className="pink margin border pointer" data-aos="example-anim2" onClick={() => scrollToRef(refProject)}>My projects</p>
+                <p className="pink margin pointer" onClick={() => scrollToRef(refAbout)}>More about me</p>
                 </div>
             </div>
             <div className="main__photo">

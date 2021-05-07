@@ -5,7 +5,7 @@ AOS.init({ duration: 1200 });
 const AboutSection = () => {
   return (
     <div className="about">
-      <div className="about__background" id="about_me">
+      <div className="about__background">
         <div data-aos="slide-up" data-aos-anchor="#trigger">
           <div className="about__content-wrapper">
             <div className="about__header">
@@ -51,40 +51,40 @@ const AboutSection = () => {
     }
                             `}</pre>
                   </div>
-                  <div className="about__content-skills">
-                    <div className="about__content-column">
+                  <div className="about__skills">
+                    <div className="about__column">
                       <div>
-                        <p className="width98">
-                          <span className="about__content-margin">HTML</span>
+                        <p className="about__width98">
+                          <span className="about__margin">HTML</span>
                         </p>
                       </div>
                       <div>
-                        <p className="width90">
-                          <span className="about__content-margin">CSS</span>
+                        <p className="about__width90">
+                          <span className="about__margin">CSS</span>
                         </p>
                       </div>
                       <div>
-                        <p className="width75">
-                          <span className="about__content-margin">JAVA SCRIPT</span>
+                        <p className="about__width75">
+                          <span className="about__margin">JAVA SCRIPT</span>
                         </p>
                       </div>
                       <div>
-                        <p className="width90">
-                          <span className="about__content-margin">REACT</span>
+                        <p className="about__width90">
+                          <span className="about__margin">REACT</span>
                         </p>
                       </div>
                       <div>
-                        <p className="width90">
-                          <span className="about__content-margin">HTML</span>
+                        <p className="about__width90">
+                          <span className="about__margin">HTML</span>
                         </p>
                       </div>
                       <div>
-                        <p className="width90">
-                          <span className="about__content-margin">HTML</span>
+                        <p className="about__width90">
+                          <span className="about__margin">HTML</span>
                         </p>
                       </div>
                     </div>
-                    <div className="about__content-numbers">
+                    <div className="about__numbers">
                       <div id="trigger" className="trigger" />
                       <p>98%</p>
                       <p>90%</p>
