@@ -5,12 +5,6 @@
 html{
   scroll-behavior: smooth;
 }
-body{
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100vw;
-  margin: 0;
-}
 h1{
   font-family: Avenir Next Condensed;
 }
@@ -62,7 +56,7 @@ footer{
   background-color: $c-mirage;
   color: $c-white;
   img{
-    margin: 1px $space-x-small;
+    margin: 5px $space-x-small;
     cursor: pointer;
   }
   p{

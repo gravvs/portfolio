@@ -17,7 +17,7 @@ const Homepage = () => {
 
       return(
           <div>
-            <Hamburgermenu />
+            <Hamburgermenu/>
             <span ref={refHeader}/>
             <Header {...{refProject, refAbout, refContact}}/>
             <MainElement {...{refProject, refAbout}}/>

@@ -5,7 +5,7 @@ import project_section4 from "../../assets/picture/portfolio_case_04.png";
 
 const ProjectSection = () => {
   return (
-    <div className="project">
+    <div className="project" id="project">
       <div className="project__wrapper">
         <div className="project__content">
           <div className="project__skills">

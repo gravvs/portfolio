@@ -5,7 +5,7 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #EFFFFA;
+  background: rgb(242, 143, 221);
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
@@ -29,6 +29,7 @@ const StyledMenu = styled.nav`
     color: #0D0C1D;
     text-decoration: none;
     transition: color 0.3s linear;
+    cursor: pointer;
 
     @media (max-width: 576px) {
       font-size: 1.5rem;
@@ -41,16 +42,18 @@ const StyledMenu = styled.nav`
   }
 `
 
-const Menu = ({ open }) => {
+
+const Menu = ({open}) => {
+
   return (
     <StyledMenu open={open}>
-      <a href="#about_me">
+      <a href="#about">
         About me
       </a>
-      <a href="#projects">
+      <a href="#project">
         My projects
         </a>
-      <a href="#message">
+      <a href="#contact">
         Contact
         </a>
     </StyledMenu>
