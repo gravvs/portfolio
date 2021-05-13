@@ -395,6 +395,23 @@
 }
 .footer{
   background-color: $c-charm-opacity;
+  &__wrapper{
+    width: 100%;
+    text-align: center;
+    background-color: $c-mirage;
+    color: $c-white;
+    img{
+      margin: 5px $space-x-small;
+      cursor: pointer;
+    }
+    p{
+      color: $c-white;
+      margin-bottom: 0;
+    }
+    p:last-child{
+      font-size: pxToRem(12);
+    }
+  }
 &__img img:hover {
   transform: scale(1.5);
   transition: 0.1s linear;

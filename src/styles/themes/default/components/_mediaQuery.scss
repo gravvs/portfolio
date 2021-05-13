@@ -17,7 +17,7 @@
   .about,
   .project,
   .contact,
-  footer{
+  .footer__wrapper{
     min-width: 1000px;
   }
 }
@@ -133,7 +133,7 @@
   .contact{
     min-width: 707px;
   }
-  footer{
+  .footer__wrapper{
     min-width: 707px;
   }
   .trigger {
@@ -260,7 +260,7 @@
   .contact{
     min-width: 0;
   }
-  footer{
+  .footer__wrapper{
     min-width: 0;
   }
 }

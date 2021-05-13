@@ -8,7 +8,7 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const Footer = ({ refHeader }) => {
   return (
     <div className="footer">
-      <footer data-aos="slide-down" data-aos-anchor="#contact">
+      <div className="footer__wrapper" data-aos="slide-down" data-aos-anchor="#contact">
         <div className="footer__return">
           <img
             src={triangle}
@@ -40,7 +40,7 @@ const Footer = ({ refHeader }) => {
           <p className="bc">BC</p>
           <p className="footer__text">BARTOSZ CZENCZEK 2021</p>
         </div>
-      </footer>
+      </div>
     </div>
   );
 };

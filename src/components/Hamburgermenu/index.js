@@ -20,7 +20,7 @@ const StyledMenu = styled.nav`
       width: 100%;
     }
 
-  a {
+  p {
     font-size: 2rem;
     text-transform: uppercase;
     padding: 2rem 0;
@@ -42,20 +42,21 @@ const StyledMenu = styled.nav`
   }
 `
 
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
-const Menu = ({open}) => {
+const Menu = ({open, refProject, refAbout, refContact}) => {
 
   return (
     <StyledMenu open={open}>
-      <a href="#about">
+      <p onClick={() => scrollToRef(refAbout)}>
         About me
-      </a>
-      <a href="#project">
+      </p>
+      <p onClick={() => scrollToRef(refProject)}>
         My projects
-        </a>
-      <a href="#contact">
+        </p>
+      <p onClick={() => scrollToRef(refContact)}>
         Contact
-        </a>
+        </p>
     </StyledMenu>
   )
 }
