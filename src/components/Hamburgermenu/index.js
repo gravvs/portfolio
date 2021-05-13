@@ -42,7 +42,7 @@ const StyledMenu = styled.nav`
   }
 `
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
 
 const Menu = ({open, refProject, refAbout, refContact}) => {
 
@@ -118,14 +118,15 @@ const Burger = ({ open, setOpen }) => {
   )
 }
 
-const Hamburgermenu = () => {
+const Hamburgermenu = ({refProject, refAbout, refContact}) => {
   const [open, setOpen] = React.useState(false);
   const node = React.useRef();
+  
   return (
     <div>
       <div ref={node}>
         <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} {...{refProject, refAbout, refContact}}/>
       </div>
     </div>
   )  

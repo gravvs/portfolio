@@ -78,7 +78,7 @@
       height: 0;
     }
     &__content-wrapper {
-      top: -100px;
+      top: -80px;
     }
     &__text-wrapper {
       display: block;
@@ -135,6 +135,9 @@
   }
   .footer__wrapper{
     min-width: 707px;
+  }
+  .footer__wrapper.aos-init{
+    transform: none;
   }
   .trigger {
     display: none;
