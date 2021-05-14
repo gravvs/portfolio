@@ -5,7 +5,7 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #EFFFFA;
+  background: rgb(242, 143, 221);
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
@@ -20,7 +20,7 @@ const StyledMenu = styled.nav`
       width: 100%;
     }
 
-  a {
+  p {
     font-size: 2rem;
     text-transform: uppercase;
     padding: 2rem 0;
@@ -29,6 +29,7 @@ const StyledMenu = styled.nav`
     color: #0D0C1D;
     text-decoration: none;
     transition: color 0.3s linear;
+    cursor: pointer;
 
     @media (max-width: 576px) {
       font-size: 1.5rem;
@@ -41,18 +42,21 @@ const StyledMenu = styled.nav`
   }
 `
 
-const Menu = ({ open }) => {
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+
+const Menu = ({open, refProject, refAbout, refContact}) => {
+
   return (
     <StyledMenu open={open}>
-      <a href="#about_me">
+      <p onClick={() => scrollToRef(refAbout)}>
         About me
-      </a>
-      <a href="#projects">
+      </p>
+      <p onClick={() => scrollToRef(refProject)}>
         My projects
-        </a>
-      <a href="#message">
+        </p>
+      <p onClick={() => scrollToRef(refContact)}>
         Contact
-        </a>
+        </p>
     </StyledMenu>
   )
 }
@@ -114,14 +118,15 @@ const Burger = ({ open, setOpen }) => {
   )
 }
 
-const Hamburgermenu = () => {
+const Hamburgermenu = ({refProject, refAbout, refContact}) => {
   const [open, setOpen] = React.useState(false);
   const node = React.useRef();
+  
   return (
     <div>
       <div ref={node}>
         <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} {...{refProject, refAbout, refContact}}/>
       </div>
     </div>
   )  

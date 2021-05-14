@@ -12,6 +12,7 @@
 }
 .contact__button:hover {
   background-color: $c-charm-opacity;
+  transition: 0.2s linear;
 }
 
 .footer{
@@ -28,5 +29,6 @@
 }
 &__return:hover{
   background-color: rgba(207, 97, 198, 0.87);
+  transition: 0.2s linear;
 }
 }

@@ -5,12 +5,6 @@
 html{
   scroll-behavior: smooth;
 }
-body{
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100vw;
-  margin: 0;
-}
 h1{
   font-family: Avenir Next Condensed;
 }
@@ -55,21 +49,4 @@ label{
   margin-left: $space-x-small;
   color: $c-white;
   font-size: pxToRem(12);
-}
-footer{
-  width: 100%;
-  text-align: center;
-  background-color: $c-mirage;
-  color: $c-white;
-  img{
-    margin: 1px $space-x-small;
-    cursor: pointer;
-  }
-  p{
-    color: $c-white;
-    margin-bottom: 0;
-  }
-  p:last-child{
-    font-size: pxToRem(12);
-  }
 }

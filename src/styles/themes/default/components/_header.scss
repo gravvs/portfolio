@@ -34,10 +34,10 @@ img.header{
   width: $space-standard;
   height: $space-standard;
   margin-top: $space-small;
+  transition: 0.1s linear;
 }
 &__nav:hover{
-  width: 25px;
-  height: 25px;
+  transform: scale(1.5);
 }
 }
 .header__nav p:not(:first-child):hover {

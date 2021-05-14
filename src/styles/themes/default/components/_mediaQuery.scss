@@ -1,11 +1,24 @@
 @media only screen and (max-width: $desktop-min) {
   .project {
+    min-width: 1000px;
     &__footer h3::after {
-      border-left: 46vw solid transparent;
+      border-left: 450px solid transparent;
     }
     &__footer h3::before {
-      border-right: 46vw solid transparent;
+      border-right: 450px solid transparent;
     }
+  }
+  .main{
+    min-width: 900px;
+  }
+  .header{
+    min-width: 950px;
+  }
+  .about,
+  .project,
+  .contact,
+  .footer__wrapper{
+    min-width: 1000px;
   }
 }
 
@@ -19,21 +32,24 @@
     display: none;
   }
   .main {
-    width: 680px;
+    min-width: 612px;
     height: 420px;
     padding-bottom: 150px;
     &__icon-1 {
-      left: 470px;
-      top: -25px;
+      left: 180px;
     }
     &__icon-2 {
-      left: 250px;
+      left: -80px;
+      top: 280px;
     }
     &__text {
       left: -78px;
     }
-    &__inline {
+    &__style-inline {
       left: -80px;
+    }
+    &__photo{
+      min-width: 235px;
     }
   }
   .main__icon-3,
@@ -42,11 +58,15 @@
   }
 
   .about {
+    min-width: 707px;
     height: 650px;
     &__background {
       border-bottom-left-radius: 34% 57px;
       border-bottom-right-radius: 33% 52px;
       height: 632px;
+    }
+    &__slide{
+      height: 10px;
     }
     &__header {
       min-width: 580px;
@@ -58,7 +78,7 @@
       height: 0;
     }
     &__content-wrapper {
-      top: -100px;
+      top: -80px;
     }
     &__text-wrapper {
       display: block;
@@ -90,6 +110,7 @@
     }
   }
   .project {
+    min-width: 707px;
     height: $space-super-large;
     position: unset;
     &__wrapper {
@@ -103,11 +124,20 @@
   .project__footer {
     top: 56px;
     h3::before {
-      border-right: 44vw solid transparent;
+      display: none;
     }
     h3::after {
-      border-left: 44vw solid transparent;
+      display: none;
     }
+  }
+  .contact{
+    min-width: 707px;
+  }
+  .footer__wrapper{
+    min-width: 707px;
+  }
+  .footer__wrapper.aos-init{
+    transform: none;
   }
   .trigger {
     display: none;
@@ -136,20 +166,14 @@
     }
   }
   .main {
+    min-width: 0;
     width: 320px;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     padding-bottom: 250px;
-
-    &__icon-1 {
-      left: 180px;
-    }
-    &__icon-2 {
-      left: -80px;
-      top: 210px;
-    }
     &__photo {
+      min-width: 0;
       width: 230px;
       height: 230px;
       display: flex;
@@ -177,6 +201,7 @@
   }
 
   .about {
+    min-width: 0;
     &__content-wrapper {
       width: 100vw;
     }
@@ -213,6 +238,7 @@
     }
   }
   .project {
+    min-width: 0;
     height: 1045px;
     &__wrapper {
       height: 1045px;
@@ -228,17 +254,17 @@
       width: $space-xxxl-large;
     }
     &__footer {
-      top: 423px;
-      h3::before {
-        display: none;
-      }
-      h3::after {
-        display: none;
-      }
+      top: 435px;
     }
   }
   form{
     width: 300px;
+  }
+  .contact{
+    min-width: 0;
+  }
+  .footer__wrapper{
+    min-width: 0;
   }
 }
 @media only screen and (max-width: $break-xss-small) {
