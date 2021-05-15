@@ -17,7 +17,8 @@ const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
 
   @media (max-width: 576px) {
-      width: 100%;
+      width: 50%;
+      background-color: rgba(242, 143, 221, 0.5);
     }
 
   p {

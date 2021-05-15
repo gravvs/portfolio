@@ -6,6 +6,10 @@ import ProjectSection from '../../components/ProjectSection';
 import ContactSection from '../../components/ContactSection';
 import Footer from '../../components/Footer';
 import Hamburgermenu from '../../components/Hamburgermenu';
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({ duration: 1200 });
+
 
 
 const Homepage = () => {
@@ -26,8 +30,7 @@ const Homepage = () => {
             <span ref={refProject} />
             <ProjectSection />
             <span ref={refContact}/>
-            <ContactSection />
-            <Footer {...{refHeader}}/>
+            <ContactSection {...{refHeader}}/>
           </div>
       );
     }
