@@ -4,7 +4,6 @@ import MainElement from '../../components/MainElement';
 import AboutSection from '../../components/AboutSection';
 import ProjectSection from '../../components/ProjectSection';
 import ContactSection from '../../components/ContactSection';
-import Footer from '../../components/Footer';
 import Hamburgermenu from '../../components/Hamburgermenu';
 import AOS from "aos";
 import "aos/dist/aos.css";
