@@ -17,15 +17,47 @@ const ProjectSection = () => {
             <p>IPSUM</p>
           </div>
           <div className="project__img">
-            <img src={project_section1} alt="portfolio_img1" />
-            <img src={project_section2} alt="portfolio_img2" />
-            <img src={project_section3} alt="portfolio_img3" />
-            <img src={project_section4} alt="portfolio_img4" />
+            <div className="project__container">
+              <img
+                src={project_section1}
+                alt="portfolio_img1"
+                className="project__image"
+              />
+              <div className="project__overlay">
+                <p className="project__text-1">YOUNG</p>
+                <p className="project__text-2">Java Js/ Python/ Ruby</p>
+                <button className="project__button">View</button>
+              </div>
+            </div>
+            <div className="project__container">
+            <img src={project_section2} alt="portfolio_img2" className="project__image"/>
+              <div className="project__overlay">
+                <p className="project__text-1">YOUNG</p>
+                <p className="project__text-2">Java Js/ Python/ Ruby</p>
+                <button className="project__button">View</button>
+              </div>
+            </div>
+            <div className="project__container">
+            <img src={project_section3} alt="portfolio_img3" className="project__image"/>
+              <div className="project__overlay">
+                <p className="project__text-1">YOUNG</p>
+                <p className="project__text-2">Java Js/ Python/ Ruby</p>
+                <button className="project__button">View</button>
+              </div>
+            </div>
+            <div className="project__container">
+            <img src={project_section4} alt="portfolio_img4" className="project__image"/>
+              <div className="project__overlay">
+                <p className="project__text-1">YOUNG</p>
+                <p className="project__text-2">Java Js/ Python/ Ruby</p>
+                <button className="project__button">View</button>
+              </div>
+            </div>
           </div>
         </div>
         <div className="project__footer">
           <h3>
-          &#x0002F;&#x0002F;<span className="pink">Contact</span>
+            &#x0002F;&#x0002F;<span className="pink">Contact</span>
           </h3>
           <span id="trigger-second" className="trigger-second" />
         </div>

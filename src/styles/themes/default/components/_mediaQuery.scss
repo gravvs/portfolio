@@ -1,25 +1,23 @@
+
 @media only screen and (max-width: $desktop-min) {
   .project {
-    min-width: 1000px;
     &__footer h3::after {
-      border-left: 450px solid transparent;
+      border-left: 46vw solid transparent;
     }
     &__footer h3::before {
-      border-right: 450px solid transparent;
+      border-right: 46vw solid transparent;
     }
   }
   .main{
-    min-width: 900px;
+    height: 360px;
+  &__icon-4 {
+    display: none;
   }
-  .header{
-    min-width: 950px;
+  &__icon-3{
+    top: -51px;
+    left: 10px;
   }
-  .about,
-  .project,
-  .contact,
-  .footer__wrapper{
-    min-width: 1000px;
-  }
+}
 }
 
 @media only screen and (max-width: $break-mobile) {
@@ -32,7 +30,6 @@
     display: none;
   }
   .main {
-    min-width: 612px;
     height: 420px;
     padding-bottom: 150px;
     &__icon-1 {
@@ -58,7 +55,6 @@
   }
 
   .about {
-    min-width: 707px;
     height: 650px;
     &__background {
       border-bottom-left-radius: 34% 57px;
@@ -71,8 +67,6 @@
     &__header {
       min-width: 580px;
       position: relative;
-      top: -14px;
-      left: -58px;
     }
     &__footer-border {
       height: 0;
@@ -87,8 +81,6 @@
       min-width: 580px;
       height: 710px;
       position: relative;
-      top: -14px;
-      left: -58px;
     }
     &__border-left {
       border-left: none;
@@ -110,15 +102,16 @@
     }
   }
   .project {
-    min-width: 707px;
-    height: $space-super-large;
-    position: unset;
+    height: 650px;
     &__wrapper {
       height: 650px;
     }
     &__img {
       width: 600px;
       justify-content: center;
+    }
+    &__skills{
+      width: 100%;
     }
   }
   .project__footer {
@@ -130,24 +123,50 @@
       display: none;
     }
   }
-  .contact{
-    min-width: 707px;
-  }
-  .footer__wrapper{
-    min-width: 707px;
-  }
-  .footer__wrapper.aos-init{
+  .footer.aos-init{
     transform: none;
-  }
-  .trigger {
-    display: none;
-  }
-  .trigger-second {
-    display: none;
   }
 }
 
-@media only screen and (max-width: $break-xs-small) {
+@media only screen and (max-width: 600px){
+  .about{
+  &__shadow{
+    width: 90%;
+    min-width: 0;
+  }
+  &__header{
+    min-width: 0;
+    width: 90%;
+  }
+  &__skills{
+    width: 70%;
+  }
+}
+  .main{
+    width: 100vw;
+    &__text-wrapper{
+      width: 50%;
+      position: relative;
+      left: 30px;
+    }
+    &__photo{
+      width: 50%;
+    }
+    &__text{
+      left: 0;
+    }
+    &__style-inline{
+      left: 0;
+    }
+  }
+  .project{
+    &__img{
+      width: 100vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
   pre {
     left: 40px;
   }
@@ -166,7 +185,6 @@
     }
   }
   .main {
-    min-width: 0;
     width: 320px;
     flex-wrap: wrap;
     justify-content: center;
@@ -182,17 +200,17 @@
     }
     &__text-wrapper {
       margin-top: $space-x-small;
-      width: 50%;
+      width: 1000%;
     }
     &__letters {
-      right: 70px;
+      right: 40px;
+      top: -50px
     }
     &__position {
       min-width: $space-xsxl-large;
     }
     &__style-inline {
       min-width: 277px;
-      left: -68px;
     }
   }
 
@@ -205,18 +223,8 @@
     &__content-wrapper {
       width: 100vw;
     }
-    &__header {
-      min-width: 100%;
-      top: 0;
-      left: 0;
-    }
-    &__shadow {
-      min-width: 100%;
-      top: 0;
-      left: 0;
-    }
     &__border-left {
-      left: 0;
+      left: 45px;
     }
     &__text-wrapper {
       justify-content: center;
@@ -234,7 +242,6 @@
     &__skills {
       top: 300px;
       left: 32px;
-      width: $space-xxxl-large;
     }
   }
   .project {
@@ -263,15 +270,34 @@
   .contact{
     min-width: 0;
   }
-  .footer__wrapper{
+  .footer{
     min-width: 0;
   }
 }
 @media only screen and (max-width: $break-xss-small) {
+  .main{
+    &__icon-1{
+      left: 150px;
+    }
+    &__icon-2{
+      top: 250px;
+    }
+  }
   .project {
     height: 1075px;
     &__wrapper {
       height: 1078px;
+    }
+  }
+  .about{
+    &__header{
+      width: 100%;
+    }
+    &__shadow{
+      width: 100%;
+    }
+    &__border-left{
+      left: 20px;
     }
   }
 }

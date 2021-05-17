@@ -1,11 +1,8 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init({ duration: 1200 });
 
 const AboutSection = () => {
   return (
     <div className="about" id="about">
-      <div className="about__background">
+      <div className="about__background" >
         <div data-aos="slide-up" data-aos-anchor="#trigger" className="about__slide">
           <div className="about__content-wrapper">
             <div className="about__header">
@@ -85,7 +82,6 @@ const AboutSection = () => {
                       </div>
                     </div>
                     <div className="about__numbers">
-                      <div id="trigger" className="trigger" />
                       <p>98%</p>
                       <p>90%</p>
                       <p>75%</p>
@@ -100,7 +96,9 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <div className="about__footer-border"></div>
+      <div className="about__footer-border">
+        <span id="trigger" className="trigger" />
+      </div>
     </div>
   );
 };
