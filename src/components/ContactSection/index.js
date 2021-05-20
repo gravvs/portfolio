@@ -8,7 +8,6 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const ContactSection = ({ refHeader }) => {
   return (
     <div className="contact__footer">
-      <div data-aos="slide-down" data-aos-anchor="#trigger-second">
         <div className="contact" id="contact">
           <form>
             <input
@@ -69,7 +68,7 @@ const ContactSection = ({ refHeader }) => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 

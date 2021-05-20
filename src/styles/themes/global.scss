@@ -2,9 +2,9 @@
 @import './normalize';
 @import './fonts.scss';
 
-
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 h1{
   font-family: Avenir Next Condensed;

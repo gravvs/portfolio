@@ -21,12 +21,12 @@
 
 @mixin blackTriangle($arg){
   position: relative;
-  top: -41px;
+  top: -28px;
   $arg: 0;
   content: "";
   width: 0;
   height: 0;
-  border-bottom: 62px solid $c-steel-gray;
+  border-bottom: 46px solid $c-steel-gray;
 }
 
 $sizes: 1, 2, 3, 4, 5;
