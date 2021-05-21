@@ -6,8 +6,8 @@ const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
 
 const Header = ({refProject, refAbout, refContact}) => {
 return ( 
-      
-        <div className="header">
+    <div className="header">
+        <div className="header__wrapper">
             <div className="header__nav">
                 <p className="header__nav"><span className="bc">BC</span></p>
                 <p className="header__nav" onClick={() => scrollToRef(refProject)}><span className="pink" >Project</span></p>
@@ -20,7 +20,7 @@ return (
                 <img src={linkedin} alt="linkedIn_icon" className="header__nav" />
             </div>
         </div>
-    
+    </div>
 )
 }
 

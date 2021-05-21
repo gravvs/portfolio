@@ -36,7 +36,6 @@
       left: 180px;
     }
     &__icon-2 {
-      left: -80px;
       top: 280px;
     }
     &__text {
@@ -129,21 +128,7 @@
 }
 
 @media only screen and (max-width: 600px){
-  .about{
-  &__shadow{
-    width: 90%;
-    min-width: 0;
-  }
-  &__header{
-    min-width: 0;
-    width: 90%;
-  }
-  &__skills{
-    width: 70%;
-  }
-}
   .main{
-    width: 100vw;
     &__text-wrapper{
       width: 50%;
       position: relative;
@@ -159,6 +144,22 @@
       left: 0;
     }
   }
+    .about{
+  &__content-wrapper{
+    top: -111px;
+  }
+  &__shadow{
+    width: 99%;
+    min-width: 0;
+  }
+  &__header{
+    min-width: 0;
+    width: 99%;
+  }
+  &__skills{
+    width: 70%;
+  }
+}
   .project{
     &__img{
       width: 100vw;
@@ -185,11 +186,13 @@
     }
   }
   .main {
-    width: 320px;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     padding-bottom: 250px;
+    &__icon-2{
+      left: -160px;
+    }
     &__photo {
       min-width: 0;
       width: 230px;
@@ -200,7 +203,8 @@
     }
     &__text-wrapper {
       margin-top: $space-x-small;
-      width: 1000%;
+      width: 90%;
+      left: 15px;
     }
     &__letters {
       right: 40px;
@@ -211,6 +215,8 @@
     }
     &__style-inline {
       min-width: 277px;
+      justify-content: space-around;
+      left: -27px;
     }
   }
 
@@ -281,6 +287,13 @@
     }
     &__icon-2{
       top: 250px;
+    }
+    &__position{
+      top: -10px;
+    }
+    &__style-inline{
+      width: 83%;
+      left: 7px;
     }
   }
   .project {

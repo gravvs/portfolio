@@ -59,7 +59,6 @@ const ProjectSection = () => {
           <h3>
             &#x0002F;&#x0002F;<span className="pink">Contact</span>
           </h3>
-          <span id="trigger-second" className="trigger-second" />
         </div>
       </div>
     </div>

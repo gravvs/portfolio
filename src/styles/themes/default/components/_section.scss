@@ -8,6 +8,7 @@
   margin: 0 $space-standard;
   padding: $space-xx-small $space-x-small;
   position: relative;
+  top: 0;
   right: 20px;
 }
 .border {
@@ -37,12 +38,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  justify-content: center;
   height: $space-xxxxl-large;
-  width: 93vw;
-  margin: 150px auto 0;
+  width: 100vw;
+  padding-top: 150px;
+  background-color: white;
 
   &__icon-1 {
     position: relative;
@@ -103,6 +103,7 @@
   &__position {
     position: relative;
     top: 30px;
+    left: 0;
     min-width: 345px;
   }
   &__letters {
@@ -110,6 +111,7 @@
     opacity: 0.1;
     position: relative;
     top: -45px;
+    left: 0;
   }
   &__text {
     position: absolute;
@@ -118,6 +120,8 @@
   }
   &__style-inline {
     position: relative;
+    top: 0;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -178,6 +182,7 @@
     margin: 0 auto;
     position: relative;
     top: 76px;
+    left: 0;
   }
   &__footer-border {
     background: $c-white;
@@ -234,11 +239,13 @@
     -ms-flex-pack: distribute;
     justify-content: space-around;
     position: relative;
+    top: 0;
     right: 110px;
   }
   &__border-left {
     width: 90%;
     position: relative;
+    top: 0;
     left: 63px;
     border-left: $space-xxx-small solid $c-gallery;
   }
@@ -256,6 +263,7 @@
     display: flex;
     width: $space-xxxl-large;
     position: relative;
+    top: 0;
     left: $space-large;
     border-left: $space-xxx-small solid $c-gallery;
     padding-left: $space-standard;
@@ -294,7 +302,11 @@
 .project {
   background-color: $c-steel-gray;
   position: relative;
+  top: 0;
+  left: 0;
   z-index: 2;
+  margin-bottom: 500px;
+  width: 100vw;
   &__wrapper {
     height: 641px;
     background-color: $c-gallery;
@@ -317,11 +329,11 @@
     border-top-left-radius: 42%;
     h3::before {
       @include blackTriangle(left);
-      border-right: 47vw solid transparent;
+      border-right: 40vw solid transparent;
     }
     h3::after {
       @include blackTriangle(right);
-      border-left: 47vw solid transparent;
+      border-left: 40vw solid transparent;
     }
   }
   &__skills {
@@ -372,6 +384,8 @@
   }
   &__container {
     position: relative;
+    top: 0;
+    left: 0;
   }
   &__overlay {
     position: absolute;
@@ -445,8 +459,12 @@
     color: $c-white;
   }
   &__footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
     background-color: rgba(219, 125, 149, 0.87);
-    width: 100%;
+    width: 100vw;
   }
 }
 .footer {
