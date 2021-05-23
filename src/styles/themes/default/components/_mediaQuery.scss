@@ -129,13 +129,25 @@
 
 @media only screen and (max-width: 600px){
   .main{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 250px;
     &__text-wrapper{
-      width: 50%;
-      position: relative;
-      left: 30px;
+      margin-top: $space-x-small;
+      width: 67%;
+      left: 15px;
     }
-    &__photo{
-      width: 50%;
+    &__icon-2{
+      left: 0;
+    }
+    &__photo {
+      min-width: 0;
+      width: 230px;
+      height: 230px;
+      display: flex;
+      border-radius: 50%;
+      margin: $space-xl-large 0 0 0;
     }
     &__text{
       left: 0;
@@ -186,13 +198,6 @@
     }
   }
   .main {
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    padding-bottom: 250px;
-    &__icon-2{
-      left: -160px;
-    }
     &__photo {
       min-width: 0;
       width: 230px;
@@ -201,10 +206,11 @@
       border-radius: 50%;
       margin: $space-xl-large 0 0 0;
     }
-    &__text-wrapper {
-      margin-top: $space-x-small;
-      width: 90%;
-      left: 15px;
+    &__text-wrapper{
+      width: 88%;
+    }
+    &__icon-2{
+      left: -160px;
     }
     &__letters {
       right: 40px;
@@ -230,7 +236,7 @@
       width: 100vw;
     }
     &__border-left {
-      left: 45px;
+      left: 28px;
     }
     &__text-wrapper {
       justify-content: center;
@@ -253,6 +259,7 @@
   .project {
     min-width: 0;
     height: 1045px;
+    background-color: transparent;
     &__wrapper {
       height: 1045px;
     }
@@ -275,6 +282,10 @@
   }
   .contact{
     min-width: 0;
+    &__footer{
+      background-color: #222030;
+      padding-top: 100px;
+    }
   }
   .footer{
     min-width: 0;
@@ -282,6 +293,7 @@
 }
 @media only screen and (max-width: $break-xss-small) {
   .main{
+    min-width: 320px;
     &__icon-1{
       left: 150px;
     }
@@ -297,20 +309,30 @@
     }
   }
   .project {
+    min-width: 320px;
     height: 1075px;
     &__wrapper {
       height: 1078px;
     }
   }
   .about{
+    min-width: 320px;
     &__header{
       width: 100%;
+      min-width: 320px;
     }
     &__shadow{
       width: 100%;
+      min-width: 320px;
     }
     &__border-left{
       left: 20px;
     }
+    &__content-wrapper{
+      width: auto;
+    }
+  }
+  .contact__footer{
+    min-width: 320px;
   }
 }

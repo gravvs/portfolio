@@ -18,7 +18,7 @@ const StyledMenu = styled.nav`
 
   @media (max-width: 576px) {
       width: 50%;
-      background-color: rgba(242, 143, 221, 0.5);
+      background-color: rgba(242, 143, 221);
     }
 
   p {
@@ -45,17 +45,17 @@ const StyledMenu = styled.nav`
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
 
-const Menu = ({open, refProject, refAbout, refContact}) => {
+const Menu = ({open, setOpen, refProject, refAbout, refContact}) => {
 
   return (
     <StyledMenu open={open}>
-      <p onClick={() => scrollToRef(refAbout)}>
+      <p onClick={() => (scrollToRef(refAbout), setOpen(!open))}>
         About me
       </p>
-      <p onClick={() => scrollToRef(refProject)}>
+      <p onClick={() => (scrollToRef(refProject),setOpen(!open))}>
         My projects
         </p>
-      <p onClick={() => scrollToRef(refContact)}>
+      <p onClick={() => (scrollToRef(refContact),setOpen(!open))}>
         Contact
         </p>
     </StyledMenu>
