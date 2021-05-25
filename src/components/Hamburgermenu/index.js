@@ -49,13 +49,13 @@ const Menu = ({open, setOpen, refProject, refAbout, refContact}) => {
 
   return (
     <StyledMenu open={open}>
-      <p onClick={() => (scrollToRef(refAbout), setOpen(!open))}>
+      <p onClick={() => {scrollToRef(refAbout); setOpen(!open)}}>
         About me
       </p>
-      <p onClick={() => (scrollToRef(refProject),setOpen(!open))}>
+      <p onClick={() => {scrollToRef(refProject); setOpen(!open)}}>
         My projects
         </p>
-      <p onClick={() => (scrollToRef(refContact),setOpen(!open))}>
+      <p onClick={() => {scrollToRef(refContact); setOpen(!open)}}>
         Contact
         </p>
     </StyledMenu>
