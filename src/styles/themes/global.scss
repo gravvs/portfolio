@@ -1,0 +1,53 @@
+@import './variables.scss';
+@import './normalize';
+@import './fonts.scss';
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+h1{
+  font-family: Avenir Next Condensed;
+}
+h2{
+  margin-left: $space-large;
+  font-size: pxToRem(32);
+  margin: $space-standard $space-large $space-x-small;
+}
+pre{
+  font-family: 'Helvetica Neue';
+  margin-top: 0;
+}
+form{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: $space-large;
+}
+textarea{
+  margin-top: $space-small;
+  height: $space-xxl-large;
+  border-radius: $space-xs-small;
+  resize: none;
+}
+input{
+  height: 25px;
+  border-radius: $space-xs-small;
+  border: transparent;
+  padding-left: 10px;
+}
+label{
+  margin-left: $space-x-small;
+  color: $c-white;
+  font-size: pxToRem(12);
+}

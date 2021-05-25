@@ -1,0 +1,9 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+@import '../fonts.scss';
+@import '../global.scss';
+
+@import './components/header';
+@import './components/buttons';
+@import './components/section';
+@import './components/mediaQuery';
