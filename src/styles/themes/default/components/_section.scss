@@ -310,7 +310,7 @@
   margin-bottom: 500px;
   width: 100vw;
   &__wrapper {
-    height: 453px;
+    height: 641px;
     background-color: $c-gallery;
     @include bottomRadius(50% $space-xxl-large);
   }
@@ -371,6 +371,7 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 747px;
+    height: $space-xxxxl-large;
     margin: $space-standard auto;
     -webkit-box-pack: start;
     -ms-flex-pack: start;

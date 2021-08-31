@@ -45,6 +45,14 @@ const ProjectSection = () => {
                 <button className="project__button">View</button>
               </div>
             </div>
+            <div className="project__container">
+            <img src={project_section4} alt="portfolio_img4" className="project__image"/>
+              <div className="project__overlay">
+                <p className="project__text-1">FUTURE</p>
+                <p className="project__text-2">ReactJs/ Typescript/ Sass</p>
+                <button className="project__button">View</button>
+              </div>
+            </div>
           </div>
         </div>
         <div className="project__footer">
