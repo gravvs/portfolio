@@ -276,8 +276,7 @@
     }
     p {
       background-color: $c-cerise-opacity;
-      border-top-left-radius: $space-xx-small;
-      border-bottom-left-radius: $space-xx-small;
+      border-radius: 5px;
     }
   }
   &__numbers p {
@@ -289,11 +288,14 @@
     font-family: sans-serif;
     font-size: pxToRem(13);
   }
-  &__width98 {
-    width: 98%;
+  &__width99 {
+    width: 99%;
   }
   &__width90 {
     width: 90%;
+  }
+  &__width95{
+    width: 95%;
   }
   &__width75 {
     width: 75%;
@@ -428,6 +430,7 @@
     position: absolute;
     top: 80%;
     left: 50%;
+    text-decoration: none;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
