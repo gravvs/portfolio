@@ -51,17 +51,17 @@ const AboutSection = () => {
                   <div className="about__skills">
                     <div className="about__column">
                       <div>
-                        <p className="about__width98">
+                        <p className="about__width99">
                           <span className="about__margin">HTML</span>
                         </p>
                       </div>
                       <div>
-                        <p className="about__width90">
+                        <p className="about__width99">
                           <span className="about__margin">CSS</span>
                         </p>
                       </div>
                       <div>
-                        <p className="about__width75">
+                        <p className="about__width90">
                           <span className="about__margin">JAVA SCRIPT</span>
                         </p>
                       </div>
@@ -71,23 +71,23 @@ const AboutSection = () => {
                         </p>
                       </div>
                       <div>
-                        <p className="about__width90">
-                          <span className="about__margin">HTML</span>
+                        <p className="about__width95">
+                          <span className="about__margin">Sass</span>
                         </p>
                       </div>
                       <div>
-                        <p className="about__width90">
-                          <span className="about__margin">HTML</span>
+                        <p className="about__width75">
+                          <span className="about__margin">Typescript</span>
                         </p>
                       </div>
                     </div>
                     <div className="about__numbers">
-                      <p>98%</p>
+                      <p>99%</p>
+                      <p>99%</p>
                       <p>90%</p>
+                      <p>90%</p>
+                      <p>95%</p>
                       <p>75%</p>
-                      <p>90%</p>
-                      <p>90%</p>
-                      <p>90%</p>
                     </div>
                   </div>
                 </div>

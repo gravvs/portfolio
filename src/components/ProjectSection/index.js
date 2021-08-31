@@ -24,32 +24,24 @@ const ProjectSection = () => {
                 className="project__image"
               />
               <div className="project__overlay">
-                <p className="project__text-1">YOUNG</p>
-                <p className="project__text-2">Java Js/ Python/ Ruby</p>
-                <button className="project__button">View</button>
+                <p className="project__text-1">QUIZ</p>
+                <p className="project__text-2">ReactJs/ Sass/ Trivia Api</p>
+                <a href="https://quiz-czenczek.netlify.app" className="project__button">View</a>
               </div>
             </div>
             <div className="project__container">
             <img src={project_section2} alt="portfolio_img2" className="project__image"/>
               <div className="project__overlay">
-                <p className="project__text-1">YOUNG</p>
-                <p className="project__text-2">Java Js/ Python/ Ruby</p>
-                <button className="project__button">View</button>
+                <p className="project__text-1">Booking</p>
+                <p className="project__text-2">GatsbyJS/ CSS/ GraphCMS</p>
+                <a href="https://czenczek.netlify.app" className="project__button">View</a>
               </div>
             </div>
             <div className="project__container">
             <img src={project_section3} alt="portfolio_img3" className="project__image"/>
               <div className="project__overlay">
-                <p className="project__text-1">YOUNG</p>
-                <p className="project__text-2">Java Js/ Python/ Ruby</p>
-                <button className="project__button">View</button>
-              </div>
-            </div>
-            <div className="project__container">
-            <img src={project_section4} alt="portfolio_img4" className="project__image"/>
-              <div className="project__overlay">
-                <p className="project__text-1">YOUNG</p>
-                <p className="project__text-2">Java Js/ Python/ Ruby</p>
+                <p className="project__text-1">FUTURE</p>
+                <p className="project__text-2">ReactJs/ Typescript/ Sass</p>
                 <button className="project__button">View</button>
               </div>
             </div>
