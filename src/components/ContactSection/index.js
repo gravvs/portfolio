@@ -1,37 +1,71 @@
+import {useState} from 'react'
 import triangle from "../../assets/picture/triangle.png";
 import facebook_icon2 from "../../assets/picture/facebook_icon2.png";
 import linkedin_icon2 from "../../assets/picture/linkedin_icon2.png";
 import instagram_icon2 from "../../assets/picture/instagram_icon2.png";
+import {send} from 'emailjs-com';
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const ContactSection = ({ refHeader }) => {
+
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    message: '',
+    reply_to: '',
+  });
+
+const handleChange = (e) => {
+  setToSend({ ...toSend, [e.target.name]: e.target.value });
+};
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+    send('service_f48wbt9', 'template_q53qx5b', toSend, 'user_FXQVQgb0BbmMgVTgh2tvN')
+    .then(function(response) {
+       console.warn('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.warn('FAILED...', error);
+    })
+  }
+
   return (
     <div className="contact__footer">
         <div className="contact" id="contact">
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
-              name="name"
+              name="from_name"
               id="name"
               placeholder="Name:"
+              value={toSend.from_name}
+              onChange={handleChange}
               required
             />
             <label htmlFor="email">Email:</label>
             <input
               type="email"
-              name="email"
+              name='reply_to'
               id="email"
               className="contact__email"
               placeholder="jan.kowalski@gmail.com"
+              value={toSend.reply_to}
+              onChange={handleChange}
+              required
             />
-            <textarea name="message" placeholder="wpisz wiadomość"></textarea>
-            <input
-              type="button"
+            <textarea 
+            type="text"
+            name="message" 
+            placeholder="Your message"
+            value={toSend.message}
+            onChange={handleChange}
+            required
+            />
+            <button
+              type="submit"
               id="submit"
-              value="Send >"
               className="contact__button pointer"
-            />
+            >Send</button>
           </form>
         </div>
         <div className="footer">
