@@ -294,7 +294,7 @@
   &__width90 {
     width: 90%;
   }
-  &__width95{
+  &__width95 {
     width: 95%;
   }
   &__width75 {
@@ -398,7 +398,7 @@
     height: 93%;
     width: 94%;
     opacity: 0;
-    transition: .5s ease;
+    transition: 0.5s ease;
     background-color: rgba(219, 125, 149, 0.7);
     border-radius: 10px;
   }
@@ -438,7 +438,7 @@
     border: white solid 1px;
     border-radius: 50px;
     padding: 2px 30px;
-    &:hover{
+    &:hover {
       color: rgba(219, 125, 149, 0.7);
       background-color: white;
     }
@@ -460,6 +460,13 @@
   &__email {
     background-color: $c-charm-opacity;
     color: $c-white;
+  }
+  &__error {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
   }
   &__footer {
     position: fixed;

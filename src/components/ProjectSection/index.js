@@ -26,7 +26,7 @@ const ProjectSection = () => {
               <div className="project__overlay">
                 <p className="project__text-1">QUIZ</p>
                 <p className="project__text-2">ReactJs/ Sass/ Trivia Api</p>
-                <a href="https://quiz-czenczek.netlify.app" className="project__button">View</a>
+                <a href="https://quiz-czenczek.netlify.app" target="__blank" className="project__button">View</a>
               </div>
             </div>
             <div className="project__container">
@@ -34,7 +34,7 @@ const ProjectSection = () => {
               <div className="project__overlay">
                 <p className="project__text-1">Booking</p>
                 <p className="project__text-2">GatsbyJS/ CSS/ GraphCMS</p>
-                <a href="https://czenczek.netlify.app" className="project__button">View</a>
+                <a href="https://czenczek.netlify.app" target="__blank" className="project__button">View</a>
               </div>
             </div>
             <div className="project__container">

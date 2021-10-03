@@ -1,4 +1,4 @@
-import facebook from '../../assets/picture/facebook.jpeg';
+import github from '../../assets/picture/github.png';
 import instagram_icon from '../../assets/picture/instagram_icon.png';
 import linkedin from '../../assets/picture/linkedin.png';
 
@@ -15,9 +15,9 @@ return (
                 <p className="header__nav border header__contact" onClick={() => scrollToRef(refContact)}>Contact</p>
             </div>
             <div className="header__nav">
-                <img src={facebook} alt="facebook_icon" className="header__nav" />
-                <img src={instagram_icon} alt="instagram_icon" className="header__nav" />
-                <img src={linkedin} alt="linkedIn_icon" className="header__nav" />
+                <a href="https://github.com/gravvs" target="__blank"><img src={github} alt="facebook_icon" className="header__nav" /></a>
+               <img src={instagram_icon} alt="instagram_icon" className="header__nav" />
+                <a href="https://www.linkedin.com/in/bartosz-czenczek-4a518b220/" target="__blank"><img src={linkedin} alt="linkedIn_icon" className="header__nav" /></a>
             </div>
         </div>
     </div>

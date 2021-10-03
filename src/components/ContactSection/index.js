@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import triangle from "../../assets/picture/triangle.png";
-import facebook_icon2 from "../../assets/picture/facebook_icon2.png";
+import github2 from "../../assets/picture/github2.png";
 import linkedin_icon2 from "../../assets/picture/linkedin_icon2.png";
 import instagram_icon2 from "../../assets/picture/instagram_icon2.png";
 import {send} from 'emailjs-com';
@@ -8,6 +8,7 @@ import {send} from 'emailjs-com';
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const ContactSection = ({ refHeader }) => {
+  const [error, setError] = useState("")
 
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -21,11 +22,12 @@ const handleChange = (e) => {
 
 const handleSubmit = (e) => {
   e.preventDefault()
+  setError("")
     send('service_f48wbt9', 'template_q53qx5b', toSend, 'user_FXQVQgb0BbmMgVTgh2tvN')
     .then(function(response) {
-       console.warn('SUCCESS!', response.status, response.text);
+       setError('SUCCESS!', response.status, response.text);
     }, function(error) {
-       console.warn('FAILED...', error);
+       setError('FAILED...', error);
     })
   }
 
@@ -33,6 +35,7 @@ const handleSubmit = (e) => {
     <div className="contact__footer">
         <div className="contact" id="contact">
           <form onSubmit={handleSubmit}>
+            {error && <h2 className="contact__error">{error}</h2>}
             <input
               type="text"
               name="from_name"
@@ -79,24 +82,24 @@ const handleSubmit = (e) => {
             />
           </div>
           <div className="footer__img">
-            <img
-              src={facebook_icon2}
+          <a href="https://github.com/gravvs" target="__blank"><img
+              src={github2}
               alt="facebook_icon"
               width="30px"
               height="30px"
-            />
+            /></a>
             <img
               src={instagram_icon2}
               alt="instagram_icon"
               width="30px"
               height="30px"
             />
-            <img
+            <a href="https://www.linkedin.com/in/bartosz-czenczek-4a518b220/" target="__blank"><img
               src={linkedin_icon2}
               alt="linkedIn_icon"
               width="30px"
               height="30px"
-            />
+            /></a>
             <p className="bc">BC</p>
             <p className="footer__text">BARTOSZ CZENCZEK 2021</p>
           </div>
